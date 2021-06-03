@@ -69,53 +69,15 @@ public class MainActivity extends AppCompatActivity {
             digitKey.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (v.getId() == R.id.button_key_0) {
-                        insertTextToMon("0");
-                        calcModel.setCurrentNumber(getTextMon());
-                    }
-                    if (v.getId() == R.id.button_key_1) {
-                        insertTextToMon("1");
-                        calcModel.setCurrentNumber(getTextMon());
-                    }
-                    if (v.getId() == R.id.button_key_2) {
-                        insertTextToMon("2");
-                        calcModel.setCurrentNumber(getTextMon());
-                    }
-                    if (v.getId() == R.id.button_key_3) {
-                        insertTextToMon("3");
-                        calcModel.setCurrentNumber(getTextMon());
-                    }
-                    if (v.getId() == R.id.button_key_4) {
-                        insertTextToMon("4");
-                        calcModel.setCurrentNumber(getTextMon());
-                    }
-                    if (v.getId() == R.id.button_key_5) {
-                        insertTextToMon("5");
-                        calcModel.setCurrentNumber(getTextMon());
-                    }
-                    if (v.getId() == R.id.button_key_6) {
-                        insertTextToMon("6");
-                        calcModel.setCurrentNumber(getTextMon());
-                    }
-                    if (v.getId() == R.id.button_key_7) {
-                        insertTextToMon("7");
-                        calcModel.setCurrentNumber(getTextMon());
-                    }
-                    if (v.getId() == R.id.button_key_8) {
-                        insertTextToMon("8");
-                        calcModel.setCurrentNumber(getTextMon());
-                    }
-                    if (v.getId() == R.id.button_key_9) {
-                        insertTextToMon("9");
-                        calcModel.setCurrentNumber(getTextMon());
-                    }
+                    Button btn = (Button) v;
+                    insertTextToMon(btn.getText().toString());
+                    calcModel.setCurrentNumber(getTextMon());
                 }
             });
         }
         signKey.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String currentNumber = getTextMon();
                 calcModel.changeSign();
                 setTextToMon(calcModel.getCurrentNumber());
             }
@@ -129,27 +91,22 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        for (int i = 0; i < actionKeys.length; i++) {
-            actionKeys[i].setOnClickListener(new View.OnClickListener() {
+        for (Button actionKey : actionKeys) {
+            actionKey.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     if (v.getId() == R.id.button_key_add) {
-                        calcModel.clickOperation(getTextMon(),ActionsEnum.ADD);
-                    }
-                    if (v.getId() == R.id.button_key_sub) {
-                        calcModel.clickOperation(getTextMon(),ActionsEnum.SUB);
-                    }
-                    if (v.getId() == R.id.button_key_mult) {
-                        calcModel.clickOperation(getTextMon(),ActionsEnum.MULT);
-                    }
-                    if (v.getId() == R.id.button_key_div) {
-                        calcModel.clickOperation(getTextMon(),ActionsEnum.DIV);
-                    }
-                    if (v.getId() == R.id.button_key_sqr) {
-                        calcModel.clickOperation(getTextMon(),ActionsEnum.POW);
-                    }
-                    if (v.getId() == R.id.button_key_sqrt) {
-                        calcModel.clickOperation(getTextMon(),ActionsEnum.SQRT);
+                        calcModel.clickOperation(getTextMon(), ActionsEnum.ADD);
+                    } else if (v.getId() == R.id.button_key_sub) {
+                        calcModel.clickOperation(getTextMon(), ActionsEnum.SUB);
+                    } else if (v.getId() == R.id.button_key_mult) {
+                        calcModel.clickOperation(getTextMon(), ActionsEnum.MULT);
+                    } else if (v.getId() == R.id.button_key_div) {
+                        calcModel.clickOperation(getTextMon(), ActionsEnum.DIV);
+                    } else if (v.getId() == R.id.button_key_sqr) {
+                        calcModel.clickOperation(getTextMon(), ActionsEnum.POW);
+                    } else if (v.getId() == R.id.button_key_sqrt) {
+                        calcModel.clickOperation(getTextMon(), ActionsEnum.SQRT);
                     }
                     setTextToMon("");
                 }
