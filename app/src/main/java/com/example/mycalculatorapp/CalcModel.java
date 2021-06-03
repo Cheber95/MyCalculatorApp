@@ -9,6 +9,13 @@ public class CalcModel implements Parcelable {
     private String previousNumber;
     private ActionsEnum previousAction = null;
     private ActionsEnum currentAction = null;
+    private double doublePrev;
+    private double doubleCur;
+
+
+    public CalcModel() {
+
+    }
 
     protected CalcModel(Parcel in) {
         currentNumber = in.readString();
@@ -27,27 +34,19 @@ public class CalcModel implements Parcelable {
         }
     };
 
-    public String operation(String number, ActionsEnum typeOfOperation) {
-
-        if (currentAction == null) {
-            currentNumber = number; /////
-            currentAction = typeOfOperation; /////
-            return "";
-        } else {
-            previousNumber = currentNumber;
-            previousAction = currentAction;
-            currentNumber = number; //////
-            currentAction = typeOfOperation; /////
-            return enterEqual();
-        }
+    public void clickOperation(String number, ActionsEnum typeOfOperation) {
+        currentAction = typeOfOperation; /////
+        previousNumber = number;
+        currentNumber = "";
     }
 
-    public String enterEqual() {
-        double doublePrev = Double.parseDouble(previousNumber);
-        double doubleCur = Double.parseDouble(currentNumber);
+    public String clickEqual(String number) {
+        currentNumber = number;
+        doublePrev = Double.parseDouble(previousNumber);
+        doubleCur = Double.parseDouble(currentNumber);
         String res = "";
         try {
-            switch (previousAction) {
+            switch (currentAction) {
                 case ADD:
                     res = Double.toString(doublePrev + doubleCur);
                     break;
@@ -68,13 +67,12 @@ public class CalcModel implements Parcelable {
                     break;
                 default:
                     delete();
-                    break;
+                    return "ERROR. PRESS DEL";
             }
         } catch (Exception e) {
             delete();
             return "ERROR. PRESS DEL";
         }
-        currentAction = null;
         return res;
     }
 
