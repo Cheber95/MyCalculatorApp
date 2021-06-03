@@ -21,7 +21,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_del"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_del"
@@ -31,7 +31,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_sqr"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_sqr"
@@ -41,7 +41,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_sqrt"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_sqrt"
@@ -51,7 +51,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_add"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_add"
@@ -61,7 +61,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_1"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_1"
@@ -71,7 +71,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_2"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_2"
@@ -81,7 +81,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_3"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_3"
@@ -91,7 +91,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_sub"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_sub"
@@ -101,7 +101,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_4"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_4"
@@ -111,7 +111,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_5"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_5"
@@ -121,7 +121,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_6"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_6"
@@ -131,7 +131,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_mult"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_mult"
@@ -141,7 +141,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_7"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_7"
@@ -151,7 +151,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_8"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_8"
@@ -161,7 +161,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_9"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_9"
@@ -171,7 +171,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_div"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_div"
@@ -181,7 +181,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_sign"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_sign"
@@ -191,7 +191,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_0"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_0"
@@ -201,7 +201,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_dot"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_dot"
@@ -211,7 +211,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_key_equal"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_equal"
