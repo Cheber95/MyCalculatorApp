@@ -13,7 +13,7 @@
     <string name="key_dot">,</string>
     <string name="key_0">0</string>
     <string name="key_sign">+/-</string>
-    <string name="key_del">DEL</string>
+    <string name="key_del">del</string>
     <string name="key_sqr">^</string>
     <string name="key_sqrt">sqrt</string>
     <string name="key_add">+</string>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="button_text_size">20sp</dimen>
+    <dimen name="textview_text_size">24sp</dimen>
     <dimen name="margin_buttons">2dp</dimen>
     <dimen name="button_width">120dp</dimen>
+    <dimen name="corner_radius_buttons">20dp</dimen>
+    <dimen name="margin_keypad_top">160dp</dimen>
+    <dimen name="textview_padding">5sp</dimen>
 </resources>
