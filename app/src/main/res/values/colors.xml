@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue_digits_color">#FF3ea0c0</color>
     <color name="red_actions_color">#FFc06c3e</color>
+    <color name="red">#FFFF0000</color>
+    <color name="red_dark">#6FFF0000</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="green">#FF00FF00</color>
 </resources>

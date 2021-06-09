@@ -45,6 +45,7 @@ public class CalcModel implements Parcelable {
         doublePrev = Double.parseDouble(previousNumber);
         doubleCur = Double.parseDouble(currentNumber);
         String res = "";
+        RuntimeException divByZero = new RuntimeException("Divide by zero!");
         try {
             switch (currentAction) {
                 case ADD:
@@ -57,7 +58,14 @@ public class CalcModel implements Parcelable {
                     res = Double.toString(doublePrev * doubleCur);
                     break;
                 case DIV:
-                    res = Double.toString(doublePrev / doubleCur);
+                    try {
+                        if (doubleCur == 0) {
+                            throw divByZero;
+                        }
+                        res = Double.toString(doublePrev / doubleCur);
+                    } catch (RuntimeException e) {
+                        return "PRESS DEL";
+                    }
                     break;
                 case POW:
                     res = Double.toString(Math.pow(doublePrev,doubleCur));
