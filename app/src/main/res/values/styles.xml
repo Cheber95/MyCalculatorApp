@@ -2,6 +2,8 @@
 <resources>
 
     <style name="MyButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/button_text_size</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:layout_margin">@dimen/margin_buttons</item>
@@ -15,5 +17,6 @@
     <style name="MyButtonStyle.Actions">
         <item name="backgroundTint">@color/red_actions_color</item>
     </style>
+
 
 </resources>

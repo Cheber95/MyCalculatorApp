@@ -3,6 +3,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:columnCount="4"
     android:layout_gravity="center">
 
@@ -12,211 +13,152 @@
         android:layout_height="wrap_content"
         android:layout_columnSpan="4"
         android:layout_gravity="fill_horizontal"
-        android:textSize="24sp"
+        android:textSize="@dimen/textview_text_size"
         android:textAlignment="viewEnd"
-        android:padding="5sp"
+        android:padding="@dimen/textview_padding"
         android:background="@color/white"
         tools:text="@string/sometext"
-        tools:ignore="RtlCompat" />
+        tools:ignore="RtlCompat"
+        />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_del"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_del"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/red_actions_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle.Actions" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_key_sqr"
-        android:layout_width="@dimen/button_width"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_key_pow"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_sqr"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/red_actions_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle.Actions" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_sqrt"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_sqrt"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/red_actions_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle.Actions" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_add"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_add"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/red_actions_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle.Actions" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_1"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_1"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/blue_digits_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_2"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_2"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/blue_digits_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_3"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_3"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/blue_digits_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_sub"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_sub"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/red_actions_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle.Actions"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_4"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_4"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/blue_digits_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_5"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_5"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/blue_digits_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_6"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_6"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/blue_digits_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_mult"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_mult"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/red_actions_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle.Actions"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_7"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_7"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/blue_digits_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_8"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_8"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/blue_digits_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_9"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_9"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/blue_digits_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_div"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_div"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/red_actions_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle.Actions"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_key_sign"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
-        android:text="@string/key_sign"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/blue_digits_color"
-        android:textColor="@color/white"/>
-
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_0"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_0"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/blue_digits_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_dot"
-        android:layout_width="@dimen/button_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
         android:text="@string/key_dot"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/blue_digits_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_key_equal"
-        android:layout_width="@dimen/button_width"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_key_sign"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_buttons"
+        android:text="@string/key_sign"
+        style="@style/MyButtonStyle"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_key_equal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/key_equal"
-        android:textSize="@dimen/button_text_size"
-        android:backgroundTint="@color/red_actions_color"
-        android:textColor="@color/white"/>
+        style="@style/MyButtonStyle.Actions"/>
 
 </GridLayout>
