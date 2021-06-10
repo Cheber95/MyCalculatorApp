@@ -28,7 +28,7 @@ public class LaunchActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LaunchActivity.this, CalculatorActivity.class);
-                intent.putExtra("IS_DARK", true);
+                intent.putExtra(CalculatorActivity.IS_DARK, true);
                 startActivity(intent);
             }
         });

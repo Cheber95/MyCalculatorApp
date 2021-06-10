@@ -3,7 +3,6 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:columnCount="4"
     android:layout_gravity="center">
 
@@ -23,141 +22,101 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_del"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_del"
         style="@style/MyButtonStyle.Actions" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_pow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_sqr"
         style="@style/MyButtonStyle.Actions" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_sqrt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_sqrt"
         style="@style/MyButtonStyle.Actions" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_add"
         style="@style/MyButtonStyle.Actions" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_1"
         style="@style/MyButtonStyle"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_2"
         style="@style/MyButtonStyle"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_3"
         style="@style/MyButtonStyle"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_sub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_sub"
         style="@style/MyButtonStyle.Actions"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_4"
         style="@style/MyButtonStyle"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_5"
         style="@style/MyButtonStyle"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_6"
         style="@style/MyButtonStyle"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_mult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_mult"
         style="@style/MyButtonStyle.Actions"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_7"
         style="@style/MyButtonStyle"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_8"
         style="@style/MyButtonStyle"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_9"
         style="@style/MyButtonStyle"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_div"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_div"
         style="@style/MyButtonStyle.Actions"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_0"
         style="@style/MyButtonStyle"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_dot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_dot"
         style="@style/MyButtonStyle"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_sign"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_sign"
         style="@style/MyButtonStyle"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_key_equal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/key_equal"
         style="@style/MyButtonStyle.Actions"/>
 

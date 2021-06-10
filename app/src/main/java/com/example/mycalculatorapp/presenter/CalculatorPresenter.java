@@ -20,6 +20,9 @@ public class CalculatorPresenter implements Parcelable {
     public CalculatorPresenter(CalculatorActivity calculatorActivity) {
         this.calculatorActivity = calculatorActivity;
         this.calculatorModel = new CalculatorModel();
+        prevNumber = 0;
+        currentNumber = 0;
+        currentAction = null;
     }
 
     protected CalculatorPresenter(Parcel in) {
