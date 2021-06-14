@@ -21,4 +21,6 @@
     <string name="key_mult">*</string>
     <string name="key_div">/</string>
     <string name="key_equal">=</string>
+    <string name="light_theme">light theme</string>
+    <string name="dark_theme">dark theme</string>
 </resources>

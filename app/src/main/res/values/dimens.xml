@@ -7,4 +7,5 @@
     <dimen name="corner_radius_buttons">20dp</dimen>
     <dimen name="margin_keypad_top">160dp</dimen>
     <dimen name="textview_padding">5sp</dimen>
+    <dimen name="theme_select_width">140dp</dimen>
 </resources>
